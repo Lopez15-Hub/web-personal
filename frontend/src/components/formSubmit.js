@@ -36,7 +36,7 @@ class AñadirArticulo extends Component {
     subtitle: " ",
     content: " ",
     img: "",
-    urlArticle: " ",
+    urlArticle: "",
   };
 
   getUsers = async () => {
@@ -86,6 +86,7 @@ class AñadirArticulo extends Component {
       subtitle: this.state.subtitle,
       content: this.state.content,
       img: this.state.img,
+      urlArticle: this.state.urlArticle
     });
     this.getUsers();
     console.log(res);

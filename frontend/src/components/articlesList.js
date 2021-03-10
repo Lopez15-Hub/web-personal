@@ -42,18 +42,18 @@ class ArticlesList extends Component{
       };
     render(){
         return(
-            <div className="col-6 m-2">
+            <div className="col-6  m-2 container-fluid shadow bg-white">
             <div>
               <h4 className="display-5">Articulos Subidos:</h4>
-              <ul className="list-group">
+              <ul className="list-group m-3 ">
                 {this.state.articles.map((articles) => (
                   <li
-                    className="list-group-item"
+                    className="list-art m-2"
                     key={articles._id}
                   >
                     {articles.title}
 
-                    <Link to="/inicio" className="p-5">
+                    <Link to={ "/articles/" + articles.urlArticle} className="p-3">
                       Ver articulo
                     </Link>
                     <button
@@ -77,7 +77,8 @@ class ArticlesList extends Component{
                       Hora:
                       <strong> {articles.createdAt.slice(11, 19)}</strong>
                     </p>
-                   
+
+                   <hr/>
                   </li>
                 ))}
               </ul>

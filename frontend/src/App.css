@@ -1,33 +1,75 @@
-.bg-orange{
-  background-color: rgba(255, 85, 23, 0.856);
+.bg-color {
+  background-color: rgba(0, 0, 255, 0.74);
 }
-.a{
-  color:white;
+/*.bg-color:hover {
+  transition-property: all;
+  transition: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 50ms;
+  transition: 100ms 40ms ease-in;
+  background: rgba(0, 0, 255, 0.767);
+}*/
+.a {
+  color: white;
   text-decoration: none;
-  margin:30px;
+  margin: 30px;
 }
-.a:hover{
-  color:black;
+.a:hover {
+  color: black;
 }
 
-.justify{
+.justify {
   text-align: justify;
 }
-.textarea{
+.textarea {
   resize: none;
 }
 
-.img{
-  background-image: url('logo.svg');
-  height: 15rem;
-  width: 15rem;
+.img {
+  background-image: url("./assets/bgNav.jpg");
+    height:18rem;
   background-repeat: no-repeat;
+}
+
+.body {
+  background-color: rgb(49, 48, 48);
+}
+
+.bg-img {
+  background: url("./assets/bgNav.jpg");
+  width: auto;
+  height: 600px;
   align-items: center;
   align-self: center;
   align-content: center;
   justify-content: center;
+  box-shadow: inset 50px 50px 200px 400px rgba(0, 0, 0, 0.493);
 }
 
-.body{
-background-color: rgb(49, 48, 48);
+.navbar {
+  position: absolute;
+  border-radius: 8px;
+}
+.list-art {
+  list-style: none;
+}
+.text-justify {
+  text-align: justify;
+}
+
+.btn-nav{
+  color: white;
+  text-decoration: none;
+  border: solid 1px;
+}
+.btn-nav:hover{
+  color: white;
+  text-decoration: none;
+  padding-bottom: 5px;
+  background-color: red;
+}
+.wpp{
+  background: url('./assets/Diseño\ sin\ título.png');
+  height: 80px;
+  width: auto;
+  background-repeat: no-repeat;
 }
