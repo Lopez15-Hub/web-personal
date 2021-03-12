@@ -26,7 +26,7 @@ class Body extends Component {
     return (
       <div className="container-fluid ">
         <div className="row">
-          <h1 className="display 3 text-center">ÚLTIMOS AGREGADOS</h1>
+          <h1 className="display-3 text-center">ÚLTIMOS AGREGADOS</h1>
           <hr />
           <div className="col-md-12 col-sm-12 col-xs-12 col-lg-10 row">
             {this.state.articles.map((articles) => (

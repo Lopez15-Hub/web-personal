@@ -9,14 +9,17 @@ function Footer() {
           Mi sitio web 2021 Todos los derechos reservados.
         </p>
 
-
         <div className="row">
-
-          
+      
         <div className="wpp text-white "></div>
-        <p className="text-white lead col mt-2">
-          Haz una consulta:  <a href="tel:+542996562742" className=" text-white under"> +54 269 - 555 - 2772</a>
-        </p>
+          <p className="text-white lead col mt-2">
+        
+       
+            <a href="tel:+542996562742" className=" text-white under">
+          
+              +54 269-555-2772
+            </a>
+          </p>
         </div>
       </footer>
     </div>
