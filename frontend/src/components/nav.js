@@ -23,14 +23,14 @@ function Nav() {
         </li>
        
         <li className="nav-item dropdown">
-          <Link className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <Link to="#" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Mas
           </Link>
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" >Añadir articulo</Link></li>
-            <li><Link className="dropdown-item" >Another action</Link></li>
+            <li><Link to="/añadir" className="dropdown-item" >Añadir articulo</Link></li>
+            <li><Link to="#" className="dropdown-item" >Another action</Link></li>
             <li><hr className="dropdown-divider"/></li>
-            <li><Link className="dropdown-item" >Something else here</Link></li>
+            <li><Link className="dropdown-item" to="#" >Something else here</Link></li>
           </ul>
         </li>
         

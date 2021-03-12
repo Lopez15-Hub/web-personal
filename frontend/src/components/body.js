@@ -26,30 +26,47 @@ class Body extends Component {
     return (
       <div className="container-fluid ">
         <div className="row">
-          <div className="col-md-12 col-lg-4 col-sm-12 col-xs-12"></div>
-          <div className="col-md-12 col-sm-12 col-xs-12 col-lg-4 row">
-            <h1 className="display 3 text-center">ÚLTIMOS AGREGADOS</h1>
-
+          <h1 className="display 3 text-center">ÚLTIMOS AGREGADOS</h1>
+          <hr />
+          <div className="col-md-12 col-sm-12 col-xs-12 col-lg-10 row">
             {this.state.articles.map((articles) => (
-              <div className="card-columns">
-                <div className="card m-2">
+              <div className="card-deck col-4" key={articles._id}>
+                <div className="card">
                   <div className="card-img-top img" />
                   <div className="card-body">
                     <h5 className="card-title">{articles.title}</h5>
                     <p className="card-text">{articles.content}</p>
                     <p className="card-text">
-                      <small class="text-muted">Last updated 3 mins ago</small>
+                      <small className="text-muted">
+                        Last updated 3 mins ago
+                      </small>
                     </p>
                   </div>
-                  <Link to="/" className="btn btn-outline-primary m-2 col-4 mb-4">
+                  <Link
+                    to="/"
+                    className="btn btn-outline-primary m-2 col-4 mb-4"
+                  >
                     Ver más
                   </Link>
                 </div>
               </div>
             ))}
           </div>
-          <div className="col-md-12 col-lg-4 col-sm-12 col-xs-12">
+          <div className="col-md-12 col-lg-2 col-sm-12 col-xs-12">
             <h1 className="display-5 text-center">Mas vistos</h1>
+            {this.state.articles.map((articles) => (
+              <li className="list-group " key={articles._id}>
+                <Link
+                  to={articles.urlArticle}
+                  className="list-item a text-dark under text-center"
+                >
+                  {articles.title}
+                  <br />
+                  {articles.content}
+                </Link>
+                <hr />
+              </li>
+            ))}
           </div>
         </div>
       </div>
