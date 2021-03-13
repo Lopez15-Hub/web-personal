@@ -38,18 +38,21 @@ class Article extends Component {
         <div className="row">
           <div className="col-2"></div>
           <div className="col-lg-8 col-sm-12">
+          <h1 className="display-5 text-center">{this.state.title}</h1>
+          
+          <div className="lead">
+                <p className=" justify col-6">{this.state.subtitle}</p>
+              </div>
+          <hr />
             <div>
               <div className="img"></div>
               <footer>
-                <strong></strong>
+                <strong>Pie de foto [reuters]</strong>
               </footer>
             </div>
             <header className="container-fluid">
-              <h1 className="display-5 text-center">{this.state.title}</h1>
-              <div className="lead">
-                <p className=" justify col-6">{this.state.subtitle}</p>
-              </div>
-              <hr />
+    
+             
             </header>
 
             <div className="justify m-5">{this.state.content}</div>

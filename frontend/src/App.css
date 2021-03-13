@@ -77,3 +77,8 @@
 .under{
   text-decoration: underline;
 }
+
+html[data-theme="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #282c34;
+}
