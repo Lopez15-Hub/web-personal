@@ -55,7 +55,7 @@ class ArticlesList extends Component{
                   >
                     {articles.title}
 
-                    <Link to={ "/articles/" + articles.urlArticle} className="p-3">
+                    <Link to={ "/articles/" + articles._id} className="p-3">
                       Ver articulo
                     </Link>
                     <button
