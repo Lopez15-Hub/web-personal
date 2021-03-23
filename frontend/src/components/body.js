@@ -9,9 +9,10 @@ class Body extends Component {
     subtitle: " ",
     content: " ",
     urlArticle: "",
+    click: " "
   };
   getArticles = async () => {
-    const res = await axios.get("http://localhost:4000/api/articles");
+    const res = await axios.get("http://localhost:5000/api/articles");
     this.setState({ articles: res.data });
     console.log(res);
   };
@@ -19,8 +20,11 @@ class Body extends Component {
   async componentDidMount() {
     this.getArticles();
 
+
     console.log(this.state.articles);
-  }
+  };
+
+
 
   render() {
     return (
@@ -35,15 +39,18 @@ class Body extends Component {
                   <div className="card-img-top img" />
                   <div className="card-body">
                     <h5 className="card-title">{articles.title}</h5>
-                    <p className="card-text">{articles.content.slice(0,150)  + "..."}</p>
+                    <p className="card-text">
+                      {articles.content.slice(0, 150) + "..."}
+                    </p>
                     <p className="card-text">
                       <small className="text-muted">
-                      Subido el: {articles.createdAt.slice(0,10)}
+                        Subido el: {articles.createdAt.slice(0, 10)}
                       </small>
                     </p>
                   </div>
                   <Link
-                    to={"/articles/"+articles.urlArticle}
+                  
+                    to={"/articles/" + articles._id}
                     className="btn btn-outline-primary m-2 col-4 mb-4"
                   >
                     Ver más
@@ -61,7 +68,6 @@ class Body extends Component {
                   className="list-item a text-dark under text-center"
                 >
                   {articles.title}
-                
                 </Link>
                 <hr />
               </li>

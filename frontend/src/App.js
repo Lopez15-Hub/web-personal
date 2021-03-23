@@ -3,7 +3,7 @@ import Inicio from "./components/views/inicio";
 import AñadirArticulo from "./components/views/añadir-articulo";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import { Component } from "react";
-import Articulo from '../src/components/views/article';
+import Articulo from './components/views/article';
 
 class App extends Component {
 
@@ -14,7 +14,7 @@ class App extends Component {
         <Route exact path="/articles" component={Inicio} />
         <Route path="/añadir" component={AñadirArticulo} />
         <Route path="/edit/:id" component={AñadirArticulo} />
-        <Route path="/articles/:id" component={Articulo} />
+        <Route exact path="/articles/:id" component={Articulo} />
       </Router>
       
     );

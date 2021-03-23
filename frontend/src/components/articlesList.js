@@ -13,18 +13,20 @@ class ArticlesList extends Component{
       };
     getUsers = async () => {
         
-        const res = await axios.get("http://localhost:4000/api/articles");
+        const res = await axios.get("http://localhost:5000/api/articles");
         this.setState({ articles: res.data });
       };
       async componentDidMount() {
     
         this.getUsers();
+    
         
       }
+
     deleteArticle = async (id) => {
         let confirm = window.confirm("Está seguro que desea eliminar el articulo?");
         if (confirm) {
-          await axios.delete("http://localhost:4000/api/articles/" + id);
+          await axios.delete("http://localhost:5000/api/articles/" + id);
           alert("Eliminación exitosa");
           this.getUsers();
         } else if (!confirm) {
@@ -34,7 +36,7 @@ class ArticlesList extends Component{
     
       updateArticle = async (id) => {
     
-          await axios.put("http://localhost:4000/api/articles/" + id);
+          await axios.put("http://localhost:5000/api/articles/" + id);
           alert("Articulo actualizado exitosamente.");
           this.getUsers();
     
@@ -42,7 +44,7 @@ class ArticlesList extends Component{
       };
     render(){
         return(
-            <div className="col-6  m-2 container-fluid shadow bg-white">
+            <div className="col-6  container-fluid  bg-white">
             <div>
               <h4 className="display-5">Articulos Subidos:</h4>
               <ul className="list-group m-3 ">
