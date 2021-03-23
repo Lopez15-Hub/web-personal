@@ -1,17 +1,17 @@
 import Nav from '../nav';
-import BodyInicio from '../bodyInicio';
+import Body from '../body';
 import Footer from "../footer";
 
-function Inicio() {
+function Articles() {
   return (
     <div className="App">
      
           <Nav />
-          <BodyInicio/>
+          <Body />
           <Footer />
    
     </div>
   );
 }
 
-export default Inicio;
+export default Articles;

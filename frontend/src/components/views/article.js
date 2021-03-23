@@ -14,8 +14,6 @@ class Article extends Component {
            const id = this.props.match.params.id // we grab the ID from the URL
         const {data} = await axios.get(`http://localhost:5000/api/articles/${id}`)
         this.setState({article: data})
-        console.log("El id es: " + id);
-        console.log(data.title)
   
   }
 

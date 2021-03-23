@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-class Body extends Component {
+class BodyInicio extends Component {
   state = {
     articles: [],
     title: " ",
@@ -29,7 +29,7 @@ class Body extends Component {
     return (
       <div className="container-fluid  ">
         <div className="row">
-          <h1 className="display-3 text-center">ÚLTIMOS AGREGADOS</h1>
+          <h1 className="display-3 text-center">INICIO</h1>
           <hr />
           <div className="col-md-12 col-sm-12 col-xs-12 col-lg-10 row">
             {this.state.articles.map((articles) => (
@@ -58,24 +58,11 @@ class Body extends Component {
               </div>
             ))}
           </div>
-          <div className="col-md-12 col-lg-2 col-sm-12 col-xs-12">
-            <h1 className="display-5 text-center">Mas vistos</h1>
-            {this.state.articles.map((articles) => (
-              <li className="list-group " key={articles._id}>
-                <Link
-                  to={articles.urlArticle}
-                  className="list-item a text-dark under text-center"
-                >
-                  {articles.title}
-                </Link>
-                <hr />
-              </li>
-            ))}
-          </div>
+         
         </div>
       </div>
     );
   }
 }
 
-export default Body;
+export default BodyInicio;
