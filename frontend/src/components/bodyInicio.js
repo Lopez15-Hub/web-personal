@@ -21,22 +21,23 @@ class BodyInicio extends Component {
 
   render() {
     return (
-      <div className=" m-5" >
+      <div className=" m-5">
+        
         {/*Section 1*/}
 
         <div className="container ">
-          {/*IMAGE*/}
           <div>
-            <div className="bgP1"/>
+            {/*IMAGE*/}
+            <div className="bgP1" />
           </div>
 
-           {/*Title*/  }
           <h1 className="display-5 text-center">
+            {/*Title*/}
             Una academia dedicada al preparamiento de profesionales
           </h1>
         </div>
-         {/*Text*/  }
         <div className=" m-5  row">
+          {/*Text*/}
           <p className="container justify col-10 ">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa modi,
             deleniti quibusdam voluptates qui sequi quis excepturi nulla rerum.
@@ -50,23 +51,23 @@ class BodyInicio extends Component {
             perspiciatis praesentium sit libero sunt harum nesciunt facilis sed?
           </p>
         </div>
-       
+
         {/*Section 2*/}
+       
         <div className="container">
-                {/*IMAGE*/}
-                <div>
-            <div className="bgP2"/>
+          <div>
+            {/*IMAGE*/}
+            <div className="bgP2" />
           </div>
-        <div>
-            <img src="" alt="" className="bgP1"/>
-          </div>
-           {/*Title*/  }
+
           <h1 className="display-5 text-center">
+            {/*Title*/}
             Estudia con los mejores profesionales del país
           </h1>
         </div>
-         {/*Text*/  }
+
         <div className=" m-5  row">
+          {/*Text*/}
           <p className=" container justify col-10 ">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa modi,
             deleniti quibusdam voluptates qui sequi quis excepturi nulla rerum.
@@ -80,7 +81,9 @@ class BodyInicio extends Component {
             perspiciatis praesentium sit libero sunt harum nesciunt facilis sed?
           </p>
         </div>
+       
         {/*Section 3*/}
+        
         <div>
           <h1 className="display-4 text-center">Portafolio</h1>
         </div>
@@ -152,7 +155,9 @@ class BodyInicio extends Component {
             </div>
           </div>
         </div>
+        
         {/*Section 4*/}
+       
         <div>
           <h1 className="display-4 text-center">Lenguajes</h1>
         </div>
@@ -224,7 +229,9 @@ class BodyInicio extends Component {
             </div>
           </div>
         </div>
+        
         {/*Section 5*/}
+       
         <div>
           <h1 className="display-4 text-center">Tutoriales</h1>
         </div>
