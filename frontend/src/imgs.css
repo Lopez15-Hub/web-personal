@@ -30,8 +30,13 @@
   }
 
   .bgP1 {
-    background: url("./assets/bootstrap-social.png");
-    height: 18rem;
+    background: url("./assets/signatures.jpg");
+    height: 30rem;
+    background-repeat: no-repeat;
+  }
+  .bgP2 {
+    background: url("./assets/signatures-2.jpg");
+    height: 30rem;
     background-repeat: no-repeat;
   }
 

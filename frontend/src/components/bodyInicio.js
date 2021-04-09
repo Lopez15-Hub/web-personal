@@ -27,7 +27,7 @@ class BodyInicio extends Component {
         <div className="container ">
           {/*IMAGE*/}
           <div>
-            <img src="" alt="" className="bgP1"/>
+            <div className="bgP1"/>
           </div>
 
            {/*Title*/  }
@@ -50,10 +50,13 @@ class BodyInicio extends Component {
             perspiciatis praesentium sit libero sunt harum nesciunt facilis sed?
           </p>
         </div>
-        <hr />
+       
         {/*Section 2*/}
         <div className="container">
                 {/*IMAGE*/}
+                <div>
+            <div className="bgP2"/>
+          </div>
         <div>
             <img src="" alt="" className="bgP1"/>
           </div>
@@ -77,13 +80,12 @@ class BodyInicio extends Component {
             perspiciatis praesentium sit libero sunt harum nesciunt facilis sed?
           </p>
         </div>
-        <hr />
         {/*Section 3*/}
         <div>
           <h1 className="display-4 text-center">Portafolio</h1>
         </div>
         <hr />
-        <div className="row row-cols-5 row-cols-md-5 g-2  ">
+        <div className=" row row-cols-5 row-cols-md-5 g-2  ">
           <div className="col">
             <div className="card shadow">
               <div class="imgCard" alt="..." />
@@ -113,6 +115,19 @@ class BodyInicio extends Component {
           <div className="col">
             <div className="card shadow">
               <div class="imgCard " alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Card title</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card ">
+              <div class=" imgCard" alt="..." />
               <div className="card-body">
                 <h5 className="card-title display-5">Card title</h5>
                 <p className="card-text">
@@ -195,13 +210,25 @@ class BodyInicio extends Component {
               </div>
             </div>
           </div>
+          <div className="col">
+            <div className="card ">
+              <div class=" imgCardBtp" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Bootstrap 5</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         {/*Section 5*/}
         <div>
           <h1 className="display-4 text-center">Tutoriales</h1>
         </div>
         <hr />
-         {/*Section 6*/  }
         <div className="row row-cols-5 row-cols-md-5 g-2 ">
           <div className="col">
             <div className="card shadow">
@@ -250,6 +277,20 @@ class BodyInicio extends Component {
               <div class=" imgCardBtp" alt="..." />
               <div className="card-body">
                 <h5 className="card-title display-5">Flutter</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <button className="btn-primary btn">Ver más</button>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card ">
+              <div class=" imgCardBtp" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Bootstrap 5</h5>
                 <p className="card-text">
                   This is a longer card with supporting text below as a natural
                   lead-in to additional content. This content is a little bit
