@@ -24,10 +24,10 @@ class BodyInicio extends Component {
     return (
       <div>
         <div>
-          <h1 className="display-4 text-center">PORTAFOLIO</h1>
+          <h1 className="display-4 text-center">Portafolio</h1>
         </div>
         <hr />
-        <div className="row row-cols-1 row-cols-md-4 g-4 ">
+        <div className="row row-cols-5 row-cols-md-5 g-2  ">
           <div className="col">
             <div className="card shadow">
               <div class="imgCard" alt="..." />
@@ -61,7 +61,8 @@ class BodyInicio extends Component {
                 <h5 className="card-title display-5">Card title</h5>
                 <p className="card-text">
                   This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
+                  lead-in to additional content. This content is a little bit
+                  longer.
                 </p>
               </div>
             </div>
@@ -81,10 +82,10 @@ class BodyInicio extends Component {
           </div>
         </div>
         <div>
-          <h1 className="display-4 text-center">LENGUAJES</h1>
+          <h1 className="display-4 text-center">Lenguajes</h1>
         </div>
         <hr />
-        <div className="row row-cols-1 row-cols-md-4 g-4 ">
+        <div className="row row-cols-5 row-cols-md-5 g-2 ">
           <div className="col">
             <div className="card shadow">
               <div class="imgCardJs" alt="..." />
@@ -118,14 +119,15 @@ class BodyInicio extends Component {
                 <h5 className="card-title display-5">CSS</h5>
                 <p className="card-text">
                   This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
+                  lead-in to additional content. This content is a little bit
+                  longer.
                 </p>
               </div>
             </div>
           </div>
           <div className="col">
             <div className="card ">
-              <div class=" imgCard" alt="..." />
+              <div class=" imgCardBtp" alt="..." />
               <div className="card-body">
                 <h5 className="card-title display-5">Bootstrap 5</h5>
                 <p className="card-text">
@@ -134,6 +136,71 @@ class BodyInicio extends Component {
                   longer.
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h1 className="display-4 text-center">Tutoriales</h1>
+        </div>
+        <hr />
+        <div className="row row-cols-5 row-cols-md-5 g-2 ">
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCardJs" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Front-End</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <button className="btn-primary btn">Ver más</button>
+
+            </div>
+          </div>
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCardReact " alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">React JS</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                
+              </div>
+              <button className="btn-primary btn">Ver más</button>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCardCSS " alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">CSS</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <button className="btn-primary btn">Ver más</button>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card ">
+              <div class=" imgCardBtp" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Flutter</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+              <button className="btn-primary btn">Ver más</button>
             </div>
           </div>
         </div>
