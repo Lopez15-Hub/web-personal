@@ -9,7 +9,7 @@ class BodyInicio extends Component {
     subtitle: " ",
     content: " ",
     urlArticle: "",
-    click: " "
+    click: " ",
   };
   getArticles = async () => {
     const res = await axios.get("http://localhost:5000/api/articles");
@@ -18,47 +18,124 @@ class BodyInicio extends Component {
 
   async componentDidMount() {
     this.getArticles();
-
-
-
-  };
-
-
+  }
 
   render() {
     return (
-      <div className="container-fluid  ">
-        <div className="row">
-          <h1 className="display-3 text-center">INICIO</h1>
-          <hr />
-          <div className="col-md-12 col-sm-12 col-xs-12 col-lg-10 row">
-            {this.state.articles.map((articles) => (
-              <div className="card-deck col-4" key={articles._id}>
-                <div className="card ">
-                  <div className="card-img-top img" />
-                  <div className="card-body">
-                    <h5 className="card-title">{articles.title}</h5>
-                    <p className="card-text">
-                      {articles.content.slice(0, 150) + "..."}
-                    </p>
-                    <p className="card-text">
-                      <small className="text-muted">
-                        Subido el: {articles.createdAt.slice(0, 10)}
-                      </small>
-                    </p>
-                  </div>
-                  <Link
-                  
-                    to={"/articles/" + articles._id}
-                    className="btn btn-outline-primary m-2 col-4 mb-4"
-                  >
-                    Ver más
-                  </Link>
-                </div>
+      <div>
+        <div>
+          <h1 className="display-4 text-center">PORTAFOLIO</h1>
+        </div>
+        <hr />
+        <div className="row row-cols-1 row-cols-md-4 g-4 ">
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCard" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Proyectos</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
               </div>
-            ))}
+            </div>
           </div>
-         
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCard " alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Card title</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCard " alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Card title</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card ">
+              <div class=" imgCard" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Card title</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h1 className="display-4 text-center">LENGUAJES</h1>
+        </div>
+        <hr />
+        <div className="row row-cols-1 row-cols-md-4 g-4 ">
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCardJs" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Javascript</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCardReact " alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">React JS</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card shadow">
+              <div class="imgCardCSS " alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">CSS</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card ">
+              <div class=" imgCard" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title display-5">Bootstrap 5</h5>
+                <p className="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );

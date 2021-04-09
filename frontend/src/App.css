@@ -29,7 +29,26 @@
     height:18rem;
   background-repeat: no-repeat;
 }
+.imgCard {
+  background-image: url("./assets/bg-card-inicio.jpg");
+    height:15rem;
+  background-repeat: no-repeat;
+}
+.imgCardReact {
+  background: url("./assets/REACTBG.png");
+  height: 18rem;
 
+}
+.imgCardJs {
+  background: url("./assets/JSBG.png");
+  height: 18rem;
+
+}
+.imgCardCSS {
+  background: url("./assets/CSS.png");
+  height: 18rem;
+
+}
 .body {
   background-color: rgb(49, 48, 48);
 }
@@ -44,6 +63,7 @@
   justify-content: center;
   box-shadow: inset 50px 50px 200px 400px rgba(0, 0, 0, 0.61);
 }
+
 
 .navbar {
   position: absolute;
@@ -76,9 +96,4 @@
 }
 .under{
   text-decoration: underline;
-}
-
-html[data-theme="dark"] {
-  --primary-color: #fff;
-  --secondary-color: #282c34;
 }
