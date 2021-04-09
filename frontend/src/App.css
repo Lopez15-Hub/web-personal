@@ -18,50 +18,11 @@
   resize: none;
 }
 
-.img {
-  background-image: url("./assets/bgNav.jpg");
-    height:18rem;
-  background-repeat: no-repeat;
-}
-.imgCard {
-  background-image: url("./assets/bg-card-inicio.jpg");
-    height:15rem;
-  background-repeat: no-repeat;
-}
-.imgCardReact {
-  background: url("./assets/REACTBG.png");
-  height: 18rem;
-  background-repeat: no-repeat;
-}
-.imgCardJs {
-  background: url("./assets/JSBG.png");
-  height: 18rem;
-  background-repeat: no-repeat;
-}
-.imgCardCSS {
-  background: url("./assets/CSS.png");
-  height: 18rem;
-  background-repeat: no-repeat;
-}
-.imgCardBtp {
-  background: url("./assets/bootstrap-social.png");
-  height: 18rem;
-  background-repeat: no-repeat;
-}
+
 .body {
   background-color: rgb(49, 48, 48);
 }
 
-.bg-img {
-  background: url("./assets/bgNav.jpg");
-  width: auto;
-  height: 350px;
-  align-items: center;
-  align-self: center;
-  align-content: center;
-  justify-content: center;
-  box-shadow: inset 50px 50px 200px 400px rgba(0, 0, 0, 0.61);
-}
 
 
 .navbar {

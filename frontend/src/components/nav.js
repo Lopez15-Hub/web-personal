@@ -5,7 +5,7 @@ function Nav() {
   return (
     <div className="container-fluid shadow mb-4 ">
       <div className="row">
-        <nav className="navbar navbar-expand-lg navar-dark mt-5">
+        <nav className="navbar navbar-expand-lg navbar-dark mt-5">
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               Mi sitio web
@@ -83,10 +83,10 @@ function Nav() {
                 <input
                   className="form-control me-2"
                   type="search"
-                  placeholder="Search"
-                  aria-label="Search"
+                  placeholder="Buscar"
+                  aria-label="Buscar"
                 />
-                <button className="btn btn-outline-primary" type="submit">
+                <button className="btn btn-outline-light" type="submit">
                   Search
                 </button>
               </form>

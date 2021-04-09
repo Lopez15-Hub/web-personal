@@ -1,4 +1,6 @@
 import "./App.css";
+import './imgs.css';
+
 import Articles from "./components/views/articles";
 import Inicio from "./components/views/inicio";
 import AñadirArticulo from "./components/views/añadir-articulo";

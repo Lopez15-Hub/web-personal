@@ -21,7 +21,64 @@ class BodyInicio extends Component {
 
   render() {
     return (
-      <div>
+      <div className=" m-5" >
+        {/*Section 1*/}
+
+        <div className="container ">
+          {/*IMAGE*/}
+          <div>
+            <img src="" alt="" className="bgP1"/>
+          </div>
+
+           {/*Title*/  }
+          <h1 className="display-5 text-center">
+            Una academia dedicada al preparamiento de profesionales
+          </h1>
+        </div>
+         {/*Text*/  }
+        <div className=" m-5  row">
+          <p className="container justify col-10 ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa modi,
+            deleniti quibusdam voluptates qui sequi quis excepturi nulla rerum.
+            Possimus nam perspiciatis praesentium sit libero sunt harum nesciunt
+            facilis sed? Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Ipsa modi, deleniti quibusdam voluptates qui sequi quis
+            excepturi nulla rerum. Possimus nam perspiciatis praesentium sit
+            libero sunt harum nesciunt facilis sed? Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Ipsa modi, deleniti quibusdam
+            voluptates qui sequi quis excepturi nulla rerum. Possimus nam
+            perspiciatis praesentium sit libero sunt harum nesciunt facilis sed?
+          </p>
+        </div>
+        <hr />
+        {/*Section 2*/}
+        <div className="container">
+                {/*IMAGE*/}
+        <div>
+            <img src="" alt="" className="bgP1"/>
+          </div>
+           {/*Title*/  }
+          <h1 className="display-5 text-center">
+            Estudia con los mejores profesionales del país
+          </h1>
+        </div>
+         {/*Text*/  }
+        <div className=" m-5  row">
+          <p className=" container justify col-10 ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa modi,
+            deleniti quibusdam voluptates qui sequi quis excepturi nulla rerum.
+            Possimus nam perspiciatis praesentium sit libero sunt harum nesciunt
+            facilis sed? Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Ipsa modi, deleniti quibusdam voluptates qui sequi quis
+            excepturi nulla rerum. Possimus nam perspiciatis praesentium sit
+            libero sunt harum nesciunt facilis sed? Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Ipsa modi, deleniti quibusdam
+            voluptates qui sequi quis excepturi nulla rerum. Possimus nam
+            perspiciatis praesentium sit libero sunt harum nesciunt facilis sed?
+          </p>
+        </div>
+        <hr />
+        {/*Section 3*/}
         <div>
           <h1 className="display-4 text-center">Portafolio</h1>
         </div>
@@ -80,6 +137,7 @@ class BodyInicio extends Component {
             </div>
           </div>
         </div>
+        {/*Section 4*/}
         <div>
           <h1 className="display-4 text-center">Lenguajes</h1>
         </div>
@@ -138,11 +196,12 @@ class BodyInicio extends Component {
             </div>
           </div>
         </div>
-
+        {/*Section 5*/}
         <div>
           <h1 className="display-4 text-center">Tutoriales</h1>
         </div>
         <hr />
+         {/*Section 6*/  }
         <div className="row row-cols-5 row-cols-md-5 g-2 ">
           <div className="col">
             <div className="card shadow">
@@ -156,7 +215,6 @@ class BodyInicio extends Component {
                 </p>
               </div>
               <button className="btn-primary btn">Ver más</button>
-
             </div>
           </div>
           <div className="col">
@@ -169,7 +227,6 @@ class BodyInicio extends Component {
                   lead-in to additional content. This content is a little bit
                   longer.
                 </p>
-                
               </div>
               <button className="btn-primary btn">Ver más</button>
             </div>
