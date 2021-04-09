@@ -16,13 +16,13 @@ class Contact extends Component {
                     Nombre
                   </label>
                   <input type="text" className="col form-control" />
-                  <label className="" htmlFor="">
+                  <label className=" mt-3" htmlFor="">
                     Apellido
                   </label>
                   <input type="text" className=" form-control" />
                 </div>
                 <div className="form-group mb-3">
-                  <label htmlFor="" className="mt-2 mb-2">
+                  <label htmlFor="" className="mt-2">
                     Email
                   </label>
                   <input type="Email" className="form-control" />
@@ -31,7 +31,7 @@ class Contact extends Component {
                   <label className="mt-2 mb-2" htmlFor="">
                     Mensaje
                   </label>
-                  <textarea className="form-control mb-3" name="" id="" cols="83" rows="5"></textarea>
+                  <textarea className="form-control mb-" name="" id="" cols="83" rows="5"></textarea>
                 </div>
                 <button type="submit" className="btn btn-primary">
                   Enviar
