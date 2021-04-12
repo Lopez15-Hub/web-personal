@@ -18,12 +18,9 @@
   resize: none;
 }
 
-
 .body {
   background-color: rgb(49, 48, 48);
 }
-
-
 
 .navbar {
   position: absolute;
@@ -36,24 +33,69 @@
   text-align: justify;
 }
 
-.btn-nav{
+.btn-nav {
   color: white;
   text-decoration: none;
   border: solid 1px;
 }
-.btn-nav:hover{
+.btn-nav:hover {
   color: white;
   text-decoration: none;
   padding-bottom: 5px;
   background-color: red;
 }
-.wpp{
-  background: url('./assets/whatsapp.png');
+.wpp {
+  background: url("./assets/whatsapp.png");
   height: 40px;
   width: 40px;
   background-repeat: no-repeat;
-
 }
-.under{
+.under {
   text-decoration: underline;
+}
+.navMain {
+  height: 40px;
+  background-color: rgb(78, 78, 78);
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+.nav-item {
+
+
+
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+.backgroundUl {
+  background-color: rgb(235, 235, 235);
+  border-radius: 1.5%;
+  padding: 5%;
+  margin: 2%;
+}
+
+.nav-item-list {
+  list-style: none;
+  padding: 2%;
+  text-decoration: none;
+  color: black;
+  border-radius: 5%;
+  border: solid 1px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+.nav-item-list:hover {
+  border: none;
+  list-style: none;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  box-shadow: 5px 5px 5px 5px silver;
+  transform: translateX(5%);
+  border-radius: 5%;
+  transition: all 300ms;
 }

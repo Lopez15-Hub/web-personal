@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 import React from "react";
 function Nav() {
-
   return (
     <div className="container-fluid shadow mb-4 ">
+      <div className="navMain   navbar-expand-lg navbar-dark row ">
+        <div className="row">
+          <Link className="navbar-brand" to="/panel">
+            Ir al panel
+          </Link>
+         
+        </div>
+      </div>
       <div className="row">
         <nav className="navbar navbar-expand-lg navbar-dark mt-5">
           <div className="container-fluid">
@@ -63,9 +70,9 @@ function Nav() {
                       </Link>
                     </li>
                     <li>
-                    <Link to="/añadir" className="dropdown-item">
-                      Modo oscuro
-                      </Link>        
+                      <Link to="/añadir" className="dropdown-item">
+                        Modo oscuro
+                      </Link>
                     </li>
                     <li>
                       <hr className="dropdown-divider" />
